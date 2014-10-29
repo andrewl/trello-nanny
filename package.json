@@ -1,0 +1,12 @@
+{
+  "name": "trello-nanny",
+    "version": "0.0.0",
+    "description": "Trello Nanny",
+    "main": "trello-nanny.js",
+    "dependencies": {
+      "node-trello": "*",
+      "node-slack": "*"
+    },
+    "license": "BSD",
+    "private": true
+}

@@ -1,0 +1,25 @@
+trello_nanny_config = {
+  //Your Trello Key
+  key: '',
+
+  //Your Trello Application Key
+  token: '',
+ 
+  //The ids of the Trello boards to monitor
+  boards: [],
+
+  //The usernames of the users to monitor
+  users: []
+
+  //Slack domain
+  slack_domain: '',
+
+  //Slack token
+  slack_token: '',
+
+  //Slack channel
+  slack_channel: '',
+
+  //Slack user
+  slack_user: '',
+}
