@@ -5,7 +5,8 @@
     "main": "trello-nanny.js",
     "dependencies": {
       "node-trello": "*",
-      "node-slack": "*"
+      "node-slack": "*",
+      "sleep": "*"
     },
     "license": "BSD",
     "private": true
