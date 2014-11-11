@@ -65,13 +65,15 @@ card_has_label = function(card, label) {
 
 card_has_labels = function(card, labels) {
   missing_labels = [];
-	for (i = 0; i < labels.length; i++) {
-		if (!card_has_label(card, labels[i])) {
+	for (l = 0; l < labels.length; l++) {
+		if (!card_has_label(card, labels[l])) {
       //console.log('a missing label - ' + labels[i]);
-      missing_labels.push(labels[i]);
+      missing_labels.push(labels[l]);
 		}
 	}
-	register_nag("Card '" + card.name + "' does not have '" + missing_labels.join(',') + "'");
+  if (missing_labels.length) {
+    register_nag("Card '" + card.name + "' does not have '" + missing_labels.join(',') + "'");
+  }
 };
 
 card_has_code_review_labels = function(card) {
